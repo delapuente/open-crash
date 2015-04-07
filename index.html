@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    navigator.serviceWorker.register('/open-crash/sw.js', { scope: '/open-crash/' })
+    .then(function () { console.log('SW registered!'); });
+  </script>
+</head>
+<body>
+  <a href="./a.html">Go to a.html</a>
+</body>
+</html>
